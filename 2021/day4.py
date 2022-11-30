@@ -35,17 +35,17 @@ with open('input/day4.txt') as f:
     number = map(int, f.readline().split(','))
     l_matrix = list(map(create_matrix, f.read().split('\n\n')))
 
-NB_WIN = 0
+nb_win = 0
 
 for nb in number:
     for i, matrix in enumerate(l_matrix):
         if(matrix == None): continue
         
-        RESULT = nb_write(matrix, nb)
-        if RESULT:
-            NB_WIN += 1
-            if(NB_WIN == 1): score_1 = score_calcule(matrix, nb)
-            elif(NB_WIN == len(l_matrix)): score_last = score_calcule(matrix, nb)
+        result = nb_write(matrix, nb)
+        if result:
+            nb_win += 1
+            if(nb_win == 1): score_1 = score_calcule(matrix, nb)
+            elif(nb_win == len(l_matrix)): score_last = score_calcule(matrix, nb)
             l_matrix[i] = None
 
 print("Part 1 : ",score_1)
