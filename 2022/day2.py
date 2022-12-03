@@ -1,6 +1,4 @@
 # Advent of Code 2022, Day 2, d3vyce
-# Result 1 : 11603
-# Result 2 : 12725
 
 with open('input/day2.txt') as f:
     file = [i for i in f.read().splitlines()]
