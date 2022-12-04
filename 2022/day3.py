@@ -1,4 +1,4 @@
-# Advent of Code 2022, Day 2, d3vyce
+# Advent of Code 2022, Day 3, d3vyce
 
 score = 0
 score2 = 0
