@@ -31,4 +31,4 @@ for size in Size:
 
 print(f'Answer 1: {Count1}')
 
-print(f'Answer 1: {Count2}')
+print(f'Answer 2: {Count2}')
